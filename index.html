@@ -19,7 +19,7 @@
     <header class="topbar">
       <div>
         <div class="nameplate">Adriano Carmo</div>
-        <div class="topbar-note">Backend-first .NET engineer with public work across automation, family education, Android delivery, realtime support, and product-shaped web systems.</div>
+        <div class="topbar-note">Backend-first .NET engineer with public work across automation, family education, Android delivery, realtime support, and product-shaped web systems built for real usage.</div>
       </div>
       <span class="status-pill">Written-first collaboration</span>
     </header>
@@ -32,8 +32,8 @@
           I build production-oriented .NET systems, from backend APIs to Blazor dashboards and Android clients.
         </p>
         <p>
-          My strongest public proof is StarkAid: a product-shaped automation platform built with
-          ASP.NET Core, Blazor, SQL-backed state, Kotlin Android, and realtime support flows. A second product line,
+          My strongest public proof is StarkAid: APIs with JWT authentication, real-time updates via SignalR,
+          SQL-backed state, Kotlin Android clients, and IoT device control via MQTT. A second product line,
           NewSchool Family, shows the same engineering direction in a different domain: homeschooling workflow,
           guided daily lessons, curriculum sequencing, evidence storage, and Stripe-backed plans.
         </p>
@@ -78,7 +78,7 @@
       </article>
       <article class="proof-card">
         <span class="proof-number">USERS</span>
-        <p>Real systems tested by real users, with fixes and improvements shaped by actual usage.</p>
+        <p>Built and deployed systems used by real users, with bug fixes and improvements based on production feedback.</p>
       </article>
       <article class="proof-card">
         <span class="proof-number">BUILD</span>
@@ -92,6 +92,9 @@
           <span class="eyebrow">Production Experience</span>
           <h2>Software that was deployed, used, and improved after feedback</h2>
         </div>
+        <p class="section-copy">
+          Built and deployed systems used by real users, with bug fixes and improvements based on production feedback.
+        </p>
         <p class="section-copy">
           I have built and deployed real systems, tested by real users, with bug fixes and improvements based on actual usage.
           My focus is not only writing code, but shipping software that works outside a local environment.
@@ -113,6 +116,11 @@
           <span class="eyebrow">Proof Surface</span>
           <h2>Open direct evidence</h2>
         </div>
+        <div class="flow-card">
+          <span class="flow-label">Runtime Flow</span>
+          <strong>User &rarr; API &rarr; MQTT &rarr; Device &rarr; SignalR &rarr; Client</strong>
+          <p>Auth, device command dispatch, realtime feedback, and client updates are part of the same runtime path.</p>
+        </div>
         <ol>
           <li>Use the <strong>live StarkAid web surface</strong> to confirm the automation product is online.</li>
           <li>Open the <strong>product demo video</strong> to see the product shape before source review.</li>
@@ -127,6 +135,46 @@
           <a href="https://github.com/Starkaid01/StarkAidApi/tree/master/docs/images/system-walkthrough" target="_blank" rel="noreferrer">Web Prints</a>
           <a href="https://github.com/Starkaid01/newschool-family/tree/main/docs/screenshots" target="_blank" rel="noreferrer">Family Product Prints</a>
         </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <span class="eyebrow">Screenshots</span>
+        <h2>Proof without opening the video first</h2>
+      </div>
+      <p class="section-copy">
+        A quick visual pass shows a live public web surface, auth entry point, and two different device-control flows in the Android client.
+      </p>
+      <div class="shot-grid">
+        <article class="shot-card">
+          <img src="assets/proof/starkaid-web-home.png" alt="StarkAid public web surface">
+          <div class="shot-copy">
+            <strong>Public web surface</strong>
+            <span>Live product-facing entry point for the automation platform.</span>
+          </div>
+        </article>
+        <article class="shot-card">
+          <img src="assets/proof/starkaid-web-login.png" alt="StarkAid login screen">
+          <div class="shot-copy">
+            <strong>Authentication flow</strong>
+            <span>Visible login surface tied to the JWT-based backend.</span>
+          </div>
+        </article>
+        <article class="shot-card">
+          <img src="assets/proof/starkaid-android-ewelink.png" alt="Android eWeLink device list">
+          <div class="shot-copy">
+            <strong>eWeLink devices</strong>
+            <span>Connected-device inventory with runtime status and command controls.</span>
+          </div>
+        </article>
+        <article class="shot-card">
+          <img src="assets/proof/starkaid-android-starkswitch.png" alt="Android StarkSwitch device control">
+          <div class="shot-copy">
+            <strong>StarkSwitch control</strong>
+            <span>MQTT-backed device control flow with portfolio-safe redaction.</span>
+          </div>
+        </article>
       </div>
     </section>
 

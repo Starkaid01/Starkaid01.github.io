@@ -393,6 +393,41 @@ a {
   background: rgba(15, 61, 68, 0.06);
 }
 
+.flow-card {
+  margin-bottom: 18px;
+  padding: 18px;
+  border-radius: 20px;
+  border: 1px solid rgba(15, 61, 68, 0.12);
+  background: rgba(255, 255, 255, 0.62);
+}
+
+.flow-label {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.flow-card strong {
+  display: block;
+  font-size: 1.04rem;
+  line-height: 1.5;
+  letter-spacing: -0.03em;
+}
+
+.flow-card p,
+.shot-copy span {
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.flow-card p {
+  margin: 10px 0 0;
+}
+
 .review-order ol {
   margin: 0;
   padding-left: 20px;
@@ -406,6 +441,46 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+}
+
+.shot-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.shot-card {
+  overflow: hidden;
+  border-radius: 24px;
+  border: 1px solid var(--line);
+  background: var(--surface-strong);
+  box-shadow: var(--shadow);
+  transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+}
+
+.shot-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(177, 78, 47, 0.34);
+}
+
+.shot-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  background: rgba(15, 61, 68, 0.08);
+}
+
+.shot-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 18px 20px 20px;
+}
+
+.shot-copy strong {
+  font-size: 1rem;
+  letter-spacing: -0.03em;
 }
 
 .chip {
@@ -458,6 +533,7 @@ a {
   }
 
   .proof-strip,
+  .shot-grid,
   .link-grid,
   .review-grid {
     grid-template-columns: 1fr;
