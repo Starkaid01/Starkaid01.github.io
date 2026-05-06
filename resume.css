@@ -68,6 +68,8 @@ a {
 }
 
 .headline,
+.subheadline,
+.proof-note,
 .resume-section p,
 .resume-section li {
   color: var(--muted);
@@ -78,6 +80,25 @@ a {
   max-width: 660px;
   margin: 14px 0 0;
   font-size: 1.04rem;
+}
+
+.subheadline {
+  max-width: 700px;
+  margin: 14px 0 0;
+  color: var(--teal);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.proof-note {
+  display: inline-flex;
+  margin: 14px 0 0;
+  padding: 10px 14px;
+  border-radius: 16px;
+  border: 1px solid rgba(15, 61, 68, 0.12);
+  background: rgba(15, 61, 68, 0.08);
+  color: var(--teal);
+  font-weight: 700;
 }
 
 .header-links {
@@ -160,6 +181,12 @@ a {
   justify-content: space-between;
   gap: 12px;
   margin-bottom: 10px;
+}
+
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .project-head h3 {
